@@ -2,8 +2,8 @@
     import { watch, ref, onMounted, onUnmounted } from "vue";
     import { useRoute } from 'vue-router'
 
-    const logoLarge = "../src/assets/assets/LOGO VILUMIN-WHITE.png";
-    const logoSmall = "../src/assets/logo-vilumin2-1.png";
+    const logoLarge = new URL("@/assets/LOGO VILUMIN-WHITE.png", import.meta.url).href;
+    const logoSmall = new URL("@/assets/logo-vilumin2-1.png", import.meta.url).href;
     const route = useRoute()
     
     const activeIndex = ref<number | null>(0); // Índice del menú seleccionado

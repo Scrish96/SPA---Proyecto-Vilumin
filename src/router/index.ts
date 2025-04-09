@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import SobreNosotros from '../views/SobreNosotros.vue'
-import Proyectos from '../views/Proyectos.vue'
-import Rental from '../views/Rental.vue'
-import Productos from '../views/Productos.vue'
-import Galeria from '../views/Galeria.vue'
+
+import Home from '@/views/Home.vue'
+import SobreNosotros from '@/views/SobreNosotros.vue'
+import Proyectos from '@/views/Proyectos.vue'
+import Rental from '@/views/Rental.vue'
+import Productos from '@/views/Productos.vue'
+import Galeria from '@/views/Galeria.vue'
 
 const routes = [
   { path: '/', name: "Home", component: Home },
@@ -16,7 +17,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes
 });
 

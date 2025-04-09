@@ -748,10 +748,10 @@ const irANosotros = () => {
 
   // Importar imágenes correctamente en Vue + Vite
   const sliderImages = ref([
-    new URL('../assets/slide1.png', import.meta.url).href,
-    new URL('../assets/slide2-1.png', import.meta.url).href,
-    new URL('../assets/slide1-1.jpeg', import.meta.url).href,
-    new URL('../assets/slide5.jpeg', import.meta.url).href
+    new URL('@/assets/slide1.png', import.meta.url).href,
+    new URL('@/assets/slide2-1.png', import.meta.url).href,
+    new URL('@/assets/slide1-1.jpeg', import.meta.url).href,
+    new URL('@/assets/slide5.jpeg', import.meta.url).href
   ]);
 
   const partners = ref([

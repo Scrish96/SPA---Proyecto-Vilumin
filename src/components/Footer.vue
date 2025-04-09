@@ -3,7 +3,7 @@
     <div class="bg-[#c84d2d] h-full w-full flex flex-col lg:flex-row md:flex-col justify-evenly items-center px-10 py-6">
       <div class="flex flex-1 flex-col justify-around h-full">
         <img
-          src="../assets/logo-vilumin2-1.png"
+          src="@/assets/logo-vilumin2-1.png"
           class="lg:w-[70%] md:w-[30%] w-3xs pb-6 object-cover"
           style="filter:drop-shadow(2px 4px 12px rgba(0,0,0,0.51));"
         />
