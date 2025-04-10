@@ -16,7 +16,7 @@
       Facere neque.
     </p>
     <div id = "partners" class="absolute w-full h-auto py-12 bottom-[0%] z-20" >
-      <h2 class="text-center text-3xl text-[#e45833] mt-6 mb-6 font-[Posterama] underline">
+      <h2 class="text-center text-2xl md:text-3xl text-[#e45833] mt-6 mb-6 font-[Posterama] underline">
         NUESTROS PARTNERS
       </h2>
       <div class="relative max-w-6xl mx-auto">
@@ -168,7 +168,7 @@
         ></circle>
       </g>
     </svg>
-    <h2 class="mt-10 underline relative z-10 text-center text-3xl text-[#e45833] pt-6 pb-6 font-[Posterama]">
+    <h2 class="mt-10 underline relative z-10 text-center text-2xl md:text-3xl text-[#e45833] pt-6 pb-6 font-[Posterama]">
         EQUIPO VILUMIN
     </h2>
     <div 
@@ -183,12 +183,12 @@
           />
         </div>
         <div class="md:px-18 px-8 xl:pb-8 md:py-8 xl:pt-15 xl:flex xl:flex-col xl:gap-50">
-          <p class="mt-2 text-xl md:text-2xl xl:text-4xl">
+          <p class="mt-6 text-xl md:text-2xl xl:text-4xl">
             Lorem ipsum dolor sit amet consectetur. Purus ultricies eleifend tortor aenean donec amet
             magna. In mus accumsan ut nibh massa condimentum eget ipsum cras. Enim molestie
             pellentesque sed tempus magna id ut pretium duis.
           </p>
-          <a @click="irANosotros" class="text-[30px] text-left md:text-right text-[#e45833] hover:underline! cursor-pointer">Ver MÁS →</a>
+          <a @click="irANosotros" class="text-2xl lg:text-3xl text-center md:text-left md:text-right text-[#e45833] hover:underline! cursor-pointer my-5 lg:my-0 block">Ver MÁS →</a>
         </div>
       </div>
     </div>
@@ -270,13 +270,13 @@
           ></path>
         </g>
     </svg>
-    <h2 class="mt-10 underline relative z-10 text-center text-3xl text-[#e45833] pt-6 pb-6 font-[Posterama]">
+    <h2 class="mt-10 underline relative z-10 text-center text-2xl md:text-3xl text-[#e45833] pt-6 pb-6 font-[Posterama]">
       PROYECTOS
     </h2>
-    <div class="relative mx-auto w-full px-4 ">
+    <div class="relative mx-auto w-full h-149 md:h-[70%] md:px-5 ">
       <swiper
         :modules="[Autoplay, Navigation]"
-        :autoplay="{ delay: 1000 }"
+        :autoplay="{ delay: 4000000 }"
         :loop="true"
         :navigation="true"
         :slidesPerView="1"
@@ -295,18 +295,18 @@
           },
           '768': {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 5,
           },
           '1024': {
             slidesPerView: 3,
             spaceBetween: 50,
           },
         }"
-        class="w-full h-full"
+        class=" w-full h-[98%] md:h-full"
       >
-        <swiper-slide v-for="(proyecto, index) in proyectos" :key="index" :class="'flex! items-center justify-center pb-4'">
+        <swiper-slide v-for="(proyecto, index) in proyectos" :key="index" :class="'flex! h-143! md:h-full! items-center justify-center '">
           <div 
-            class="relative flex justify-center items-center w-95 sm:w-[420px] h-[650px] sm:h-[712px] overflow-hidden gap-[20px] px-4 sm:px-8 pt-0 sm:pt-12 pb-2.5 rounded-3xl bg-[#515151]/75"
+            class="absolute md:relative flex justify-center items-center w-76 h-135 md:h-152 md:w-86 overflow-hidden rounded-3xl bg-[#515151]/75"
             style="box-shadow: 6px 6px 22px -3px rgba(255,106,60,0.7), inset 0px 0px 15px 1px #767676;;"
           >
             <video 
@@ -319,13 +319,13 @@
               class="top-0 absolute w-full sm:h-auto object-contain">
             </video>
             <div
-              class="flex flex-col justify-end items-end flex-grow-0 flex-shrink-0 w-full relative gap-4 py-2 bg-transparent">
+              class="flex flex-col justify-end items-end flex-grow-0 flex-shrink-0 w-full h-full relative gap-4 px-5 bg-transparent">
               <p
                 class="text-white text-lg sm:text-2xl text-left">
                 Lorem ipsum dolor sit amet consectetur. Purus ultricies eleifend tortor aenean donec
                 amet magna.
               </p>
-              <p class="text-[#e45833] text-lg sm:text-2xl text-left hover:underline">Ver MÁS →</p>
+              <a class="text-[#e45833] text-2xl lg:text-3xl text-left hover:underline my-5 lg:my-0 block">Ver MÁS →</a>
             </div>
           </div>                                              
         </swiper-slide>
@@ -518,12 +518,12 @@
       style="box-shadow: 6px 6px 22px -3px rgba(255,106,60,0.35), inset 0px 0px 15px 1px #767676;">
       <div class="md:flex">
         <div class="md:px-18 px-8 xl:pb-8 md:py-8 xl:pt-15 xl:flex xl:flex-col xl:gap-50">
-          <p class="mt-2 text-xl md:text-2xl xl:text-4xl">
+          <p class="pt-7 text-xl md:text-2xl xl:text-4xl">
             Lorem ipsum dolor sit amet consectetur. Purus ultricies eleifend tortor aenean donec amet
             magna. In mus accumsan ut nibh massa condimentum eget ipsum cras. Enim molestie
             pellentesque sed tempus magna id ut pretium duis.
           </p>
-          <a class="text-[30px] text-left md:text-left text-[#e45833] hover:underline! cursor-pointer">Ver MÁS →</a>
+          <a class="text-2xl lg:text-3xl text-center md:text-left md:text-left text-[#e45833] hover:underline! cursor-pointer my-5 lg:my-0 block">Ver MÁS →</a>
         </div>
         <div class="md:shrink-0">
           <img
@@ -655,10 +655,10 @@
           ></path>
         </g>
       </svg>
-    <h2 class="mt-10 underline relative z-10 text-center text-3xl text-[#e45833] pt-6 pb-6 font-[Posterama]">
+    <h2 class="mt-10 underline relative z-10 text-center text-2xl md:text-3xl text-[#e45833] pt-6 pb-6 font-[Posterama]">
       PRODUCTOS
     </h2>
-    <div class="relative mx-auto w-full px-4">
+    <div class="relative mx-auto w-full h-160 md:h-[68%] md:px-5 ">
       <swiper
         :modules="[Autoplay, Pagination, Navigation]"
         :autoplay="{ delay: 4000000 }"
@@ -680,7 +680,7 @@
           },
           '768': {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 0,
           },
           '1024': {
             slidesPerView: 3,
@@ -689,9 +689,9 @@
         }"
         class="w-full h-full"
       >
-        <swiper-slide v-for="(producto, index) in productos" :key="index" :class="'flex! items-center h-[675px]! justify-center'">
+        <swiper-slide v-for="(producto, index) in productos" :key="index" :class="'flex! h-155! h-160! items-center justify-center '">
           <div 
-            class="relative flex p-8 flex-col justify-end items-center w-[350px] sm:w-[420px] h-auto sm:h-[625px] overflow-hidden gap-[20px] sm:px-[30px] sm:pt-[52px] pb-2.5 rounded-[30px] bg-[#515151]/75"
+            class="relative flex p-8 flex-col justify-end items-center w-76 h-135 md:h-140 md:w-80 overflow-hidden rounded-[30px] bg-[#515151]/75"
             style="box-shadow: 6px 6px 22px -3px rgba(255,106,60,0.7), inset 0px 0px 15px 1px #767676;;"
           >
             <h3 :class="'font-[Posterama]'">{{producto.nombre}}</h3>
@@ -701,12 +701,12 @@
               class="w-full h-[280px] object-contain">
             </img>
             <div
-              class="flex flex-col justify-end items-end flex-grow-0 flex-shrink-0 w-full relative gap-[15px] py-2 bg-transparent">
+              class="flex flex-col justify-end items-end w-full relative gap-[15px] py-2 bg-transparent">
               <p
-                class="flex-grow-0 flex-shrink-0 w-full h-auto text-xl text-left text-white">
+                class="w-full h-auto text-xl text-left text-white">
                 Lorem ipsum dolor sit amet consectetur. Purus ultricies eleifend tortor aenean donec.
               </p>
-              <p class="flex-grow-0 flex-shrink-0 text-[30px] text-left text-[#e45833] hover:underline">Ver MÁS →</p>
+              <p class="text-2xl lg:text-3xl text-left text-[#e45833] hover:underline my-2 lg:my-0 block">Ver MÁS →</p>
             </div>
           </div>                                              
         </swiper-slide>
@@ -716,14 +716,14 @@
 
   <!-- Sección Galería de Fotos -->
   <section id="galeria" class="relative w-full h-screen flex flex-col bg-[#242424] z-10">
-    <h2 class="mt-10 underline z-10 text-center text-3xl text-[#e45833] pt-6 pb-6 font-[Posterama]">
+    <h2 class="mt-10 underline z-10 text-center text-2xl md:text-3xl text-[#e45833] pt-6 pb-6 font-[Posterama]">
       GALERÍA DE FOTOS
     </h2>
     <div class="grid-container">
       <img v-for="(foto, index) in fotos" :key="index" :src="foto.img" :class="foto.class" />
     </div>
     <p
-      class="text-[30px] hover:underline text-left text-[#e45833]"
+      class="text-2xl lg:text-3xl hover:underline text-left text-[#e45833]"
     >
       Ver MÁS →
     </p>

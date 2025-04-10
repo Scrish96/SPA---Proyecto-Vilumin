@@ -30,7 +30,7 @@
               </clipPath>
             </defs>
           </svg>
-          <p class="text-xl md:text-2xl lg:pl-[5%] text-center md:text-left text-white">xxxxx@gmail.com</p>
+          <p class="text-xl md:text-2xl lg:pl-[5%] pl-[2%] text-center md:text-left text-white">xxxxx@gmail.com</p>
         </div>
         <div class="w-full flex justify-center md:justify-start p-2">
           <svg
@@ -48,12 +48,12 @@
               stroke="white"
             ></path>
           </svg>
-          <p class="text-xl md:text-2xl lg:pl-[5%] text-center md:text-left text-white">999-999-999</p>
+          <p class="text-xl md:text-2xl lg:pl-[5%] pl-[2%] text-center md:text-left text-white">999-999-999</p>
         </div>
         
       </div>
       <div class="flex flex-2 flex-col md:flex-row md:gap-15 w-full titulo-servicios">
-        <div v-for = "(seccion,i) in textosFooter" :key="i" class="flex flex-1 gap-4 md:gap-0 flex-col justify-evenly h-full text-left text-white!">
+        <div v-for = "(seccion,i) in textosFooter" :key="i" class="flex flex-1 gap-4 md:gap-0 xl:gap-5 flex-col justify-evenly h-full text-left text-white!">
           <h3 :class=seccion.cabecera.clase>{{seccion.cabecera.titulo}}</h3>
           <ul v-for=" (items,j) in seccion.items.titulos" :key="j" :class="seccion.items.clase">
             <li class="inline hover:underline cursor-pointer">{{items}}</li>
@@ -69,7 +69,7 @@
       </div>
     </div>
     <div class="w-full bg-[#d9d9d9]">
-      <p class="text-lg md:text-2xl text-black text-center">
+      <p class="text-md md:text-2xl text-black text-center">
         © {{ currentYear }} Todos los Derechos Reservados - Vilumin
       </p>
     </div>
@@ -82,7 +82,7 @@
   {
     cabecera: {
       titulo:"Nosotros", 
-      clase:"w-full! text-[30px] text-left text-white! underline!"
+      clase:"w-full! text-2xl md:text-3xl text-left text-white! underline!"
     },
     items: {
       titulos:[
@@ -96,7 +96,7 @@
   {
     cabecera: {
       titulo:"Servicios", 
-      clase:"w-full! text-[30px] text-left text-white! underline!"
+      clase:"w-full! text-2xl md:text-3xl text-left text-white! underline!"
     },
     items: {
       titulos:[
@@ -110,7 +110,7 @@
   {
     cabecera: {
       titulo:"Legal", 
-      clase:"w-full! text-[30px] text-left text-white! underline!"
+      clase:"w-full! text-2xl md:text-3xl text-left text-white! underline!"
     },
     items: {
       titulos:[

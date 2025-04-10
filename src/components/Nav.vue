@@ -134,7 +134,7 @@
         :class="isMobile
                 ? 'z-50 bg-black fixed flex flex-col-reverse w-full px-5 ' 
                 : (isScrolled
-                    ? 'bg-[rgba(0,0,0,0.7)] py-2 shadow-2xl shadow-[rgba(0,0,0,1)] h-[95px] z-50 fixed w-full '
+                    ? 'bg-[rgba(0,0,0,0.7)] py-2 shadow-2xl shadow-[rgba(0,0,0,1)] md:h-[135px] 2xl:h-[95px] z-50 fixed w-full '
                     : 'w-full h-[36%] flex py-3.5 top-0 z-50 fixed transition-all duration-500')"
     >
         <span @click="handleMenuOpen()" class="absolute md:hidden right-6 top-3 cursor-pointer text-4xl">
@@ -145,7 +145,7 @@
             :class="[isMobile
                         ? 'absolute pb-10 w-[95.5%] top-17.5 bg-black px-10 duration-700 ease-in '
                         : (isScrolled 
-                            ? 'w-full top-2 flex relative justify-center flex-row justify-center md:top-[80px] 2xl:top-[25px] left-0!' 
+                            ? 'w-full top-2 flex relative justify-center flex-row justify-center md:top-[75px] 2xl:top-[25px] left-0!' 
                             : 'w-full top-[133px] absolute flex justify-center items-center bg-transparent left-0!'),
                     isOpen?'left-0':'left-[-100%]']"
             >
@@ -195,11 +195,11 @@
                 :class="isMobile
                             ? 'relative block h-11 w-full'
                             : (isScrolled 
-                                ? 'w-[240px] h-11 md:top-[-65px] 2xl:top-[0px] flex justify-center items-center absolute right-[30px] ' 
-                                : 'w-[218px] h-16 top-[-100px] flex justify-center items-center absolute right-[30px] ')"
+                                ? 'w-[220px] h-11 md:top-[-58px] 2xl:top-[0px] flex justify-center items-center absolute right-[30px] ' 
+                                : 'w-[218px] md:h-13 xl:h-16 top-[-100px] flex justify-center items-center absolute right-[30px] ')"
                 style="background: linear-gradient(to bottom, #ff6a3c 0%, #fe873d 48%, #e45833 100%); box-shadow: 0px 0px 10.199999809265137px 7px rgba(255,255,255,0.25);"
             >
-                <p :class="isMobile?'text-xl':(isScrolled?'w-[240px] text-[18px]':'w-[218px] text-[26px]')" class=" text-center text-white break-words whitespace-normal leading-tight text-wrap font-[Posterama]">
+                <p :class="isMobile?'text-xl':(isScrolled?'w-[240px] md:text-md xl:text-xl':'md:w-full 2xl:w-[218px] md:text-lg xl:text-xl')" class=" text-center text-white break-words whitespace-normal leading-tight text-wrap font-[Posterama]">
                 Registrate / Cotiza
                 </p>
             </button>
