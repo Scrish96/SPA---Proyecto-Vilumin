@@ -276,7 +276,7 @@
     <div class="relative mx-auto w-full h-149 md:h-[70%] md:px-5 ">
       <swiper
         :modules="[Autoplay, Navigation]"
-        :autoplay="{ delay: 4000000 }"
+        :autoplay="{ delay: 4000 }"
         :loop="true"
         :navigation="true"
         :slidesPerView="1"
@@ -661,7 +661,7 @@
     <div class="relative mx-auto w-full h-160 md:h-[68%] md:px-5 ">
       <swiper
         :modules="[Autoplay, Pagination, Navigation]"
-        :autoplay="{ delay: 4000000 }"
+        :autoplay="{ delay: 4000 }"
         :loop="true"
         :navigation="true"
         :slidesPerView="1"
